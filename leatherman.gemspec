@@ -4,9 +4,9 @@ require File.expand_path('../lib/leatherman/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["zerobearing2"]
   gem.email         = ["david@zerobearing.com"]
-  gem.description   = %q{Leathermans tool core extensions for rails 3.x projects.}
-  gem.summary       = %q{Common core extensions extracted from various rails projects.}
-  gem.homepage      = ""
+  gem.description   = %q{The Leatherman GEM is a collection of various class extensions for Rails 3.x / Ruby 1.9.x projects.}
+  gem.summary       = %q{Common class extensions used as tools or additions for ease of use. A developers handy tool.}
+  gem.homepage      = "https://github.com/zerobearing2/leatherman"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   gem.files         = `git ls-files`.split("\n")
@@ -17,8 +17,9 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('activesupport', '>= 3.0')
   gem.add_dependency('i18n')
-  gem.add_dependency('guard')
-  gem.add_dependency('growl')
-  gem.add_dependency('guard-rspec')
-  gem.add_development_dependency('rspec', '>= 2.7')
+
+  gem.add_development_dependency('guard')
+  gem.add_development_dependency('growl')
+  gem.add_development_dependency('guard-rspec')
+  gem.add_development_dependency('rspec')
 end

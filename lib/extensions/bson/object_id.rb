@@ -26,8 +26,6 @@ module Extensions
   end
 end
 
-if defined? BSON::ObjectId
-  class BSON::ObjectId
-    include Extensions::BSON::ObjectId
-  end
+class BSON::ObjectId
+  include Extensions::BSON::ObjectId
 end
