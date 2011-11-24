@@ -1,0 +1,50 @@
+module Extensions
+  module Hash
+    extend ActiveSupport::Concern
+
+    included do
+      # empty
+    end
+    
+    module InstanceMethods
+
+      def compact
+        delete_if{|k, v| v.blank? or v.instance_of?(self.class) && v.compact.empty?}
+      end
+
+      def stringify
+        inject({}) do |options, (key, value)|
+          options[key.to_s] = value.to_s
+          options
+        end
+      end
+
+      def stringify!
+        each do |key, value|
+          delete(key)
+          store(key.to_s, value.to_s)
+        end
+      end
+
+      def drop(key)
+        self.clone.tap{|c| c.delete(key) }
+      end
+
+      def drop!(key)
+        delete(key)
+        self
+      end
+
+    end
+
+    module ClassMethods
+      # empty
+    end
+    
+  end
+end
+
+
+class Hash
+  include Extensions::Hash
+end

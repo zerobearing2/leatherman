@@ -4,8 +4,8 @@ require File.expand_path('../lib/leatherman/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["zerobearing2"]
   gem.email         = ["david@zerobearing.com"]
-  gem.description   = %q{Leathermans tool for ruby. Mostly class extensions for common tasks related to rails 3.x}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Leathermans tool core extensions for rails 3.x projects.}
+  gem.summary       = %q{Common core extensions extracted from various rails projects.}
   gem.homepage      = ""
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
