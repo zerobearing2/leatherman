@@ -1,9 +1,10 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require 'ruby-units'
+# for testing
 require 'mongoid'
 require 'liquid'
+
 require 'leatherman'
 
 RSpec.configure do |config|
