@@ -25,6 +25,7 @@ module Extensions
       end
 
       def avg
+        return 0 if length < 1
         (sum.to_f/length.to_f).to_f
       end
       
