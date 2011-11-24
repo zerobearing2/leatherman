@@ -10,7 +10,7 @@ Why
 -------------
 
 This GEM was created primiarly for me to 'DRY' on various client projects. I found myself copying over
-these common class extensions from project to project. Perfect case for creating and sharing the GEM.
+these common class extensions from project to project. Perfect case for creating and sharing this GEM.
 
 Compatibility
 -------------
@@ -24,7 +24,8 @@ USE AT YOUR OWN RISK.
 TODO
 -------------
 
-* Write specs.
+* Write specs
+* Write docs
 * Abstract more extensions
 * Test, Test, Test...
 

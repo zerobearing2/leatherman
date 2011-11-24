@@ -15,3 +15,7 @@ end
 if defined?(BSON) or defined?(Mongoid)
   require 'extensions/bson'
 end
+
+if defined?(Liquid)
+  require 'extensions/liquid'
+end

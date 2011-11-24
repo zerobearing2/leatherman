@@ -22,4 +22,8 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency('growl')
   gem.add_development_dependency('guard-rspec')
   gem.add_development_dependency('rspec')
+  gem.add_development_dependency('liquid', ">= 2.2.2")
+  gem.add_development_dependency('mongoid', ">= 2.3.3")
+  gem.add_development_dependency('bson', ">= 1.3.1")
+  gem.add_development_dependency('bson_ext', ">= 1.3.1")
 end
