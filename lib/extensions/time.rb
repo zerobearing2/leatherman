@@ -19,8 +19,8 @@ module Extensions
       #
       def adjust_by_utc_offset
         t = self.utc
-        t = t + Time.zone.utc_offset
-        t = t + 1.hour if Time.zone.now.dst? # dst hack
+        t = t + ::Time.zone.utc_offset
+        t = t + 1.hour if ::Time.zone.now.dst? # dst hack
         t
       end
 

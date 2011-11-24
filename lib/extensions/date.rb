@@ -16,7 +16,7 @@ module Extensions
       # Return today from given timezone
       #
       def today_in_time_zone
-        Time.zone.now.to_date
+        ::Time.zone.now.to_date
       end
       
     end
