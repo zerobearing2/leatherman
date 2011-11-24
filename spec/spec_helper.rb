@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 
+require 'ruby-units'
 require 'mongoid'
 require 'liquid'
 require 'leatherman'

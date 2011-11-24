@@ -17,6 +17,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency('activesupport', '>= 3.0')
   gem.add_dependency('i18n')
+  gem.add_dependency('ruby-units', ">= 1.3.2")
 
   gem.add_development_dependency('guard')
   gem.add_development_dependency('growl')
