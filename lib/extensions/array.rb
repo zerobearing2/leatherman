@@ -27,6 +27,10 @@ module Extensions
       def avg
         (sum.to_f/length.to_f).to_f
       end
+      
+      def every(n)
+        values_at( *(0...size).step(n) )
+      end
 
     end
 

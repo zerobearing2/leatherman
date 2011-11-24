@@ -2,6 +2,8 @@ require 'spec_helper'
 
 describe Array do
   
+  pending "#every"
+  
   context "#avg" do
     it("should avg integers") do
       [1,2,3].avg.should eq(2)
