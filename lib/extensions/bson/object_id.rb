@@ -16,6 +16,13 @@ module Extensions
           options[:builder].tag!(key, to_s)
         end
 
+        # compare using BSON::ObjectId array representation
+        # sorting BSON::ObjectId's is like sorting by timestamp
+        # because they contain a created timestamp within.
+        def <=>(b)
+          self.try(:to_a) <=> b.try(:to_a)
+        end
+        
       end
 
       module ClassMethods
