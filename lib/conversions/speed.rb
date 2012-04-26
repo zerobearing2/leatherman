@@ -4,21 +4,9 @@ module Conversions
   module Speed
     extend ActiveSupport::Concern
 
-    included do
-      # empty
-    end
-    
-    module InstanceMethods
-
-      # speed proxy
-      def speed
-        SpeedProxy.new(self)
-      end
-      
-    end
-
-    module ClassMethods
-      # empty
+    # speed proxy
+    def speed
+      SpeedProxy.new(self)
     end
     
   end

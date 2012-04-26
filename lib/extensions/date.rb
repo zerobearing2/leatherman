@@ -2,14 +2,6 @@ module Extensions
   module Date
     extend ActiveSupport::Concern
 
-    included do
-      # empty
-    end
-    
-    module InstanceMethods
-      # empty
-    end
-
     module ClassMethods
 
       # 

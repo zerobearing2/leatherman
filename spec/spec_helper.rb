@@ -4,6 +4,7 @@ require 'bundler/setup'
 # for testing
 require 'mongoid'
 require 'liquid'
+require 'pry'
 
 require 'leatherman'
 

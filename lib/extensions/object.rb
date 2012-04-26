@@ -2,23 +2,11 @@ module Extensions
   module Object
     extend ActiveSupport::Concern
 
-    included do
-      # empty
+    def is_numeric?
+      true if Float(self) rescue false
     end
-    
-    module InstanceMethods
-
-      def is_numeric?
-        true if Float(self) rescue false
-      end
-      alias :isnumeric? :is_numeric?
+    alias :isnumeric? :is_numeric?
       
-    end
-
-    module ClassMethods
-      # empty
-    end
-    
   end
 end
 

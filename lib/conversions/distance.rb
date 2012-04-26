@@ -4,23 +4,11 @@ module Conversions
   module Distance
     extend ActiveSupport::Concern
 
-    included do
-      # empty
-    end
-    
-    module InstanceMethods
-
-      # distance proxy
-      def distance
-        DistanceProxy.new(self)
-      end
-
+    # distance proxy
+    def distance
+      DistanceProxy.new(self)
     end
 
-    module ClassMethods
-      # empty
-    end
-    
   end
 end
 
