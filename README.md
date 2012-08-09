@@ -27,6 +27,7 @@ USE AT YOUR OWN RISK.
 TODO
 -------------
 
+* make it work with ruby 1.9.3
 * Write specs
 * Write docs
 * Abstract more extensions
