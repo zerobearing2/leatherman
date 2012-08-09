@@ -1,6 +1,9 @@
 Overview
 ========
 
+[![Build Status](https://secure.travis-ci.org/zerobearing2/leatherman.png)](http://travis-ci.org/zerobearing2/leatherman)
+<!--[![Dependency Status](https://gemnasium.com/zerobearing2/leatherman.png)](https://gemnasium.com/zerobearing2/leatherman)-->
+
 About Leatherman
 -------------
 
@@ -9,7 +12,7 @@ The Leatherman GEM is a collection of various class extensions for Rails 3.x / R
 Why
 -------------
 
-This GEM was created primiarly for me to 'DRY' on various client projects. I found myself copying over
+This GEM was created primarily for me to 'DRY' on various client projects. I found myself copying over
 these common class extensions from project to project. Perfect case for creating and sharing this GEM.
 
 Compatibility
@@ -32,26 +35,8 @@ TODO
 License
 -------
 
-Copyright (c) 2011 Zerobearing Enterprises, LLC.
+Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Credits
 -------
