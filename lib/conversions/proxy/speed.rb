@@ -9,21 +9,21 @@ class SpeedProxy
   # miles/hour -> kilometers/hour
   #
   def mph_to_kmh
-    number.to_unit("mi/h").convert_to("km/h").scalar
+    number.to_unit("mi/h").convert_to("km/h").scalar.to_f
   end
   
   #
   # meters/sec -> kilometers/hour
   #
   def ms_to_kmh
-    number.to_unit("m/s").convert_to("km/h").scalar
+    number.to_unit("m/s").convert_to("km/h").scalar.to_f
   end
 
   #
   # meters/sec -> miles/hour
   #
   def ms_to_mph
-    number.to_unit("m/s").convert_to("mi/h").scalar
+    number.to_unit("m/s").convert_to("mi/h").scalar.to_f
   end
 
 end

@@ -6,9 +6,11 @@ module Extensions
       delete_if{|k, v| v.blank? or v.instance_of?(self.class) && v.compact.empty?}
     end
 
-    def stringify
+    def stringify(options = {})
+      preserve_nil = options.delete(:preserve_nil)||false
+      
       inject({}) do |options, (key, value)|
-        options[key.to_s] = value.to_s
+        options[key.to_s] = (preserve_nil && value.nil? ? nil : value.to_s)
         options
       end
     end

@@ -9,7 +9,7 @@ class DistanceProxy
   # meters -> miles
   #
   def meters_to_mi
-    self.number.to_unit("m").convert_to("mi").scalar
+    self.number.to_unit("m").convert_to("mi").scalar.to_f
   end
   alias :m_to_mi :meters_to_mi
 
@@ -17,7 +17,7 @@ class DistanceProxy
   # miles -> meters
   #
   def mi_to_meters
-    number.to_unit("mi").convert_to("m").scalar
+    number.to_unit("mi").convert_to("m").scalar.to_f
   end
   alias :mi_to_m :mi_to_meters
 
