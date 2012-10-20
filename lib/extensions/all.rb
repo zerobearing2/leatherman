@@ -9,7 +9,7 @@ if defined?(ActiveSupport)
   require 'extensions/active_support/all'
 end
 
-if defined?(BSON) or defined?(Mongoid)
+if defined?(BSON)
   require 'extensions/bson/all'
 end
 
