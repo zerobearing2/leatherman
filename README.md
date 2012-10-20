@@ -2,7 +2,7 @@ Overview
 ========
 
 [![Build Status](https://secure.travis-ci.org/zerobearing2/leatherman.png)](http://travis-ci.org/zerobearing2/leatherman)
-<!--[![Dependency Status](https://gemnasium.com/zerobearing2/leatherman.png)](https://gemnasium.com/zerobearing2/leatherman)-->
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/zerobearing2/leatherman)
 
 About Leatherman
 -------------
@@ -18,11 +18,11 @@ these common class extensions from project to project. Perfect case for creating
 Compatibility
 -------------
 
-Leatherman is tested and used with Ruby 1.9.2 and Rails 3.1.x. 
+Leatherman is tested and used with Ruby 1.9.2 and Rails 3.1.x.
 
 Note: It may work just fine with other Rubies/Rails; however, we've made no effort to test.
 
-USE AT YOUR OWN RISK. 
+USE AT YOUR OWN RISK.
 
 TODO
 -------------
