@@ -1,18 +1,16 @@
-require 'extensions/object'
-require 'extensions/hash'
-require 'extensions/array'
-require 'extensions/date'
-require 'extensions/time'
-require 'extensions/file'
+require 'active_support/core_ext'
 
-if defined?(ActiveSupport)
-  require 'extensions/active_support/all'
-end
+require_relative 'core/array'
+require_relative 'core/object'
+require_relative 'core/hash'
+require_relative 'core/date'
+require_relative 'core/time'
+require_relative 'core/file'
 
-if defined?(BSON)
-  require 'extensions/bson/all'
-end
+# if defined?(Liquid)
+#   require 'extensions/liquid/all'
+# end
 
-if defined?(Liquid)
-  require 'extensions/liquid/all'
-end
+# if defined?(BSON)
+#   require 'extensions/bson/all'
+# end
