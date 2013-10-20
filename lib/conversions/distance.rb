@@ -3,6 +3,10 @@ require 'conversions/proxy/distance'
 module Conversions
   module Distance
 
+    ##
+    # Convert to a distance object
+    # 
+    # Returns [DistanceProxy] of self.
     def to_distance
       DistanceProxy.new(self)
     end

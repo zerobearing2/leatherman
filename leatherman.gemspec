@@ -20,6 +20,8 @@ Gem::Specification.new do |gem|
   # environment
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'yard'
+  gem.add_development_dependency 'yard-tomdoc'
   
   # test infrastructure
   gem.add_development_dependency 'minitest'

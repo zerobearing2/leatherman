@@ -18,5 +18,10 @@ module Extensions::BSON
       end
     end
 
+    def test_to_xml
+      assert_equal "<bson>#{@bson1.to_s}</bson>", @bson1.to_xml
+      assert_equal "<id>#{@bson1.to_s}</id>", @bson1.to_xml(root: "id")
+    end
+
   end
 end

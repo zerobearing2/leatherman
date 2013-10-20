@@ -1,21 +1,32 @@
+##
+# Public: DistanceProxy class for converting
+# various values to distances with units.
 class DistanceProxy
-  attr_accessor :number
+  
+  # Internal:
+  attr_reader :number
 
+  ##
+  # Initialize with a number
+  # 
+  # number - A integer or float
   def initialize(number)
-    self.number = number
+    @number = number
   end
 
-  #
-  # meters -> miles
-  #
+  ##
+  # Convert meters to miles.
+  # 
+  # Returns Float of converted value.
   def meters_to_mi
-    self.number.to_unit("m").convert_to("mi").scalar.to_f
+    number.to_unit("m").convert_to("mi").scalar.to_f
   end
   alias :m_to_mi :meters_to_mi
 
+  ##
+  # Convert miles to meters
   #
-  # miles -> meters
-  #
+  # Returns Float of converted value.
   def mi_to_meters
     number.to_unit("mi").convert_to("m").scalar.to_f
   end

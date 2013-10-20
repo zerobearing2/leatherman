@@ -3,7 +3,10 @@ require 'conversions/proxy/speed'
 module Conversions
   module Speed
 
-    # speed proxy
+    ##
+    # Convert to a speed object
+    # 
+    # Returns [SpeedProxy] of self.
     def to_speed
       SpeedProxy.new(self)
     end
