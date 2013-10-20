@@ -102,8 +102,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Public: DistanceProxy class for converting various values to distances with
-units.</p>
+<p>DistanceProxy class for converting various values to distances with units.</p>
 
 
   </div>
@@ -137,12 +136,10 @@ units.</p>
   
   
   
-  
+  <span class="private note title">private</span>
 
   
-    <span class="summary_desc"><div class='inline'>
-<p>Internal:.</p>
-</div></span>
+    <span class="summary_desc"><div class='inline'></div></span>
   
 </li>
 
@@ -189,7 +186,7 @@ units.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#meters_to_mi-instance_method" title="#meters_to_mi (instance method)">- (Object) <strong>meters_to_mi</strong> </a>
+      <a href="#meters_to_mi-instance_method" title="#meters_to_mi (instance method)">- (Float) <strong>meters_to_mi</strong> </a>
     
 
     
@@ -215,7 +212,7 @@ units.</p>
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#mi_to_meters-instance_method" title="#mi_to_meters (instance method)">- (Object) <strong>mi_to_meters</strong> </a>
+      <a href="#mi_to_meters-instance_method" title="#mi_to_meters (instance method)">- (Float) <strong>mi_to_meters</strong> </a>
     
 
     
@@ -258,13 +255,31 @@ units.</p>
     
 <p>Initialize with a number</p>
 
-<p>number - A integer or float</p>
-
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>number</span>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A integer or float</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 
 </div><table class="source_code">
   <tr>
@@ -305,8 +320,10 @@ units.</p>
   
 </h3><div class="docstring">
   <div class="discussion">
-    
-<p>Internal:</p>
+    <p class="note private">
+  <strong>This method is part of a private API.</strong>
+  You should avoid using this method if possible, as it may be removed or be changed in the future.
+</p>
 
 
   </div>
@@ -345,7 +362,7 @@ units.</p>
       <div class="method_details first">
   <h3 class="signature first" id="meters_to_mi-instance_method">
   
-    - (<tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt>) <strong>meters_to_mi</strong> 
+    - (<tt><span class='object_link'><a href="Float.html" title="Float (class)">Float</a></span></tt>) <strong>meters_to_mi</strong> 
   
 
   
@@ -360,13 +377,29 @@ units.</p>
     
 <p>Convert meters to miles.</p>
 
-<p>Returns Float of converted value.</p>
-
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Float.html" title="Float (class)">Float</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of converted value.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -392,7 +425,7 @@ units.</p>
       <div class="method_details ">
   <h3 class="signature " id="mi_to_meters-instance_method">
   
-    - (<tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt>) <strong>mi_to_meters</strong> 
+    - (<tt><span class='object_link'><a href="Float.html" title="Float (class)">Float</a></span></tt>) <strong>mi_to_meters</strong> 
   
 
   
@@ -407,13 +440,29 @@ units.</p>
     
 <p>Convert miles to meters</p>
 
-<p>Returns Float of converted value.</p>
-
 
   </div>
 </div>
 <div class="tags">
   
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Float.html" title="Float (class)">Float</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of converted value.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -441,7 +490,7 @@ units.</p>
 </div>
 
     <div id="footer">
-  Generated on Sun Oct 20 14:47:13 2013 by
+  Generated on Sun Oct 20 15:05:54 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.2 (ruby-2.0.0).
 </div>

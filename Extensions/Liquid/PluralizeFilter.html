@@ -102,7 +102,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#pluralize-instance_method" title="#pluralize (instance method)">- (Object) <strong>pluralize</strong>(input, size = 1) </a>
+      <a href="#pluralize-instance_method" title="#pluralize (instance method)">- (String) <strong>pluralize</strong>(input, size = 1) </a>
     
 
     
@@ -117,7 +117,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Public: pluralize filter,  requires ActiveSupport pluralize.</p>
+<p>pluralize filter,  requires ActiveSupport pluralize.</p>
 </div></span>
   
 </li>
@@ -135,7 +135,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="pluralize-instance_method">
   
-    - (<tt><span class='object_link'><a href="../../Object.html" title="Object (class)">Object</a></span></tt>) <strong>pluralize</strong>(input, size = 1) 
+    - (<tt>String</tt>) <strong>pluralize</strong>(input, size = 1) 
   
 
   
@@ -144,17 +144,69 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Public: pluralize filter,  requires ActiveSupport pluralize</p>
-
-<p>input - [String] to pluralize size - [Integer] number of inputs</p>
-
-<p>Returns String of pluralized input.</p>
+<p>pluralize filter,  requires ActiveSupport pluralize</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>input</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>to pluralize</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>size</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="../../Integer.html" title="Integer (class)">Integer</a></span></tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>1</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>number of inputs</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>of pluralized input.</p>
+</div>
+      
+    </li>
+  
+</ul>
 
 </div><table class="source_code">
   <tr>
@@ -184,7 +236,7 @@
 </div>
 
     <div id="footer">
-  Generated on Sun Oct 20 14:47:13 2013 by
+  Generated on Sun Oct 20 15:05:54 2013 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.2 (ruby-2.0.0).
 </div>
