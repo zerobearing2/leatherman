@@ -2,5 +2,6 @@
 --no-private
 --embed-mixin ClassMethods
 --plugin tomdoc
+--output-dir tmp/docs
 --
 lib/**/*.rb
