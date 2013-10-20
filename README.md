@@ -18,7 +18,7 @@ these common class extensions from project to project. Perfect case for creating
 Compatibility
 -------------
 
-Leatherman is tested and used with Ruby 1.9.2 and Rails 3.1.x.
+Leatherman is tested and used with Ruby 2.0.0 and Rails 4.0.x.
 
 Note: It may work just fine with other Rubies/Rails; however, we've made no effort to test.
 
@@ -27,8 +27,7 @@ USE AT YOUR OWN RISK.
 TODO
 -------------
 
-* make it work with ruby 1.9.3
-* Write specs
+* Write tests
 * Write docs
 * Abstract more extensions
 * Test, Test, Test...

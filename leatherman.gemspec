@@ -2,10 +2,10 @@
 require File.expand_path('../lib/leatherman/version', __FILE__)
 
 Gem::Specification.new do |gem|
-  gem.authors       = ["zerobearing2"]
-  gem.email         = ["david@zerobearing.com"]
-  gem.description   = %q{Ruby/Rails random multi-tool}
-  gem.summary       = %q{Common class extensions used as tools or additions for ease of use. A developers handy tool.}
+  gem.authors       = ["zerobearing2", "revans"]
+  gem.email         = ["david@zerobearing.com", "robert@codewranglers.org"]
+  gem.description   = %q{Ruby & Rails library of tools}
+  gem.summary       = %q{Common class extensions used as tools. A developers handy tool.}
   gem.homepage      = "https://github.com/zerobearing2/leatherman"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
