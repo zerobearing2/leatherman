@@ -1,7 +1,6 @@
 module Extensions
   module BSON
     module ObjectId
-      extend ActiveSupport::Concern
 
       def to_xml(options)
         # Serialize Mongo object IDs as a string
@@ -21,6 +20,9 @@ module Extensions
   end
 end
 
-class BSON::ObjectId
+#
+# Injection
+# 
+class ::BSON::ObjectId
   include Extensions::BSON::ObjectId
 end

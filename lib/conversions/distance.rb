@@ -2,16 +2,17 @@ require 'conversions/proxy/distance'
 
 module Conversions
   module Distance
-    extend ActiveSupport::Concern
 
-    # distance proxy
-    def distance
+    def to_distance
       DistanceProxy.new(self)
     end
 
   end
 end
 
+#
+# Injections
+# 
 class Integer
   include Conversions::Distance
 end

@@ -6,8 +6,14 @@ require "minitest/focus"
 require "minitest/reporters"
 require "mocha/setup"
 require 'pry'
+require 'timecop'
 
-require 'leatherman/all'
+require 'bson'
+require 'liquid'
+require 'ruby-units'
+
+require 'leatherman/extensions'
+require 'leatherman/conversions'
 
 Minitest::Reporters.use! if ENV['USE_REPORTERS']
 

@@ -14,23 +14,41 @@ module Extensions::Core
     end
 
     def test_stringify!
-      skip "need tests"
+      # preserve nils
+      ::Hash[:test => nil].tap do |test|
+        test.stringify!(preserve_nil: true)
+        assert_nil test['test']
+        assert test.key?('test')
+        refute test.key?(:test)
+      end
+
+      # don't preserve nils
+      ::Hash[:test => nil].tap do |test|
+        test.stringify!(preserve_nil: false)
+        assert_equal "", test['test']
+        assert test.key?('test')
+        refute test.key?(:test)
+      end
     end
 
     def test_drop
-      skip "need tests"
+      ::Hash[:test => nil, :test2 => "123"].tap do |test|
+        assert_equal [:test], test.drop(:test2).keys
+        assert_equal [:test2], test.drop(:test).keys
+      end
     end
 
     def test_drop!
-      skip "need tests"
+      ::Hash[:test => nil, :test2 => "123"].tap do |test|
+        test.drop!(:test2)
+        assert_equal [:test], test.keys
+      end
     end
 
     def test_compact
-      skip "need tests"
-    end
-
-    def test_compact!
-      skip "need tests"
+      ::Hash[:test => nil, :test2 => "123"].compact.tap do |test|
+        assert_equal [:test2], test.keys
+      end
     end
 
   end

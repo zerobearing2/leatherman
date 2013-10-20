@@ -15,21 +15,23 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Leatherman::VERSION
 
+  gem.add_dependency 'activesupport', '~> 4.0.0'
+
   # environment
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'pry'
-  gem.add_development_dependency 'activesupport', '~> 4.0.0'
   
   # test infrastructure
   gem.add_development_dependency 'minitest'
   gem.add_development_dependency 'minitest-focus'
   gem.add_development_dependency 'minitest-reporters'
   gem.add_development_dependency 'mocha'
+  gem.add_development_dependency 'timecop'
   
   # 3rd party gems
   gem.add_development_dependency 'i18n'
   gem.add_development_dependency 'ruby-units'
   gem.add_development_dependency 'liquid'
-  gem.add_development_dependency 'mongoid'
+  gem.add_development_dependency 'bson_ext'
   gem.add_development_dependency 'sequel'
 end

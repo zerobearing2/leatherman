@@ -14,10 +14,12 @@ module Extensions
         end
       end
 
-      def stringify!
+      def stringify!(options = {})
+        preserve_nil = options.delete(:preserve_nil)||false
+
+        stringify_keys!
         each do |key, value|
-          delete(key)
-          store(key.to_s, value.to_s)
+          store(key, (preserve_nil && value.nil? ? nil : value.to_s))
         end
       end
 
@@ -41,4 +43,10 @@ end
 
 class ::ActiveSupport::HashWithIndifferentAccess
   include Extensions::Core::Hash
+end
+
+if defined?(BSON)
+  class BSON::OrderedHash
+    include Extensions::Core::Hash
+  end
 end

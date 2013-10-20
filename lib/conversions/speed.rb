@@ -2,16 +2,18 @@ require 'conversions/proxy/speed'
 
 module Conversions
   module Speed
-    extend ActiveSupport::Concern
 
     # speed proxy
-    def speed
+    def to_speed
       SpeedProxy.new(self)
     end
     
   end
 end
 
+#
+# Injections
+# 
 class Integer
   include Conversions::Speed
 end
