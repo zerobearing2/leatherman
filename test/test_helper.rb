@@ -1,5 +1,8 @@
 $:.unshift File.expand_path('../../lib', __FILE__)
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'active_support/testing/assertions'
 require 'minitest/autorun'
 require "minitest/focus"

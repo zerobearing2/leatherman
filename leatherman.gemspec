@@ -24,6 +24,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'yard-tomdoc'
   
   # test infrastructure
+  gem.add_development_dependency 'coveralls'
   gem.add_development_dependency 'minitest'
   gem.add_development_dependency 'minitest-focus'
   gem.add_development_dependency 'minitest-reporters'
